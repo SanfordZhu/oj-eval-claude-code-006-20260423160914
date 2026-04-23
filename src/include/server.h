@@ -299,10 +299,10 @@ void PrintMap() {
           std::cout << mine_count[i][j];
         }
       } else if (marked[i][j]) {
-        if (game_state == 1) {
+        if (is_mine[i][j]) {
           std::cout << '@';
         } else {
-          std::cout << '@';
+          std::cout << 'X';
         }
       } else {
         if (game_state == 1 && is_mine[i][j]) {
